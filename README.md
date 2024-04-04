@@ -58,10 +58,12 @@ Whenever the robot got away from the black line we assigned an error number to i
   Overall Steering of the bot,
   >Steering = K<sub>p</sub> × e + K<sub>d</sub> × ( e<sub>current</sub> - e<sub>previous</sub> ) + K<sub>i</sub> × e<sub>Summation of all errors</sub>
   
-  <img src="![image](https://github.com/DibboBhai/Line_Follower_Robot/assets/148962484/9cba2af3-7003-459b-920b-123f35272b1e)" width="100" height="100">
+  <img src="https://github.com/DibboBhai/Line_Follower_Robot/assets/148962484/709b36f0-d8f0-42db-97cd-da279d3747f4" width="800" height="500">
 
+  **<ins>Giving Output</ins>**
 
-
+  After doing all the calculations in Arduino by using the PID concept the motordriver give output of how much electricity is to be supplid to the motor driver and then that cause speed variation in wheels and thus cause steering.
+  
 # Equipments Used
 - Arduino UNO
 - Breadboard, Jumper Wires, Switch(SPST)
@@ -73,4 +75,8 @@ Whenever the robot got away from the black line we assigned an error number to i
 - Motor Wheels X2
 - Castor Wheel
 - Nuts & Blots, Glue gun, Soldering iron, Double Tapes
+
+# System Architecture
+
+We decided to put IR sensors at the front most part of the carso that blackline can be detected the most. The battery suppliest power to every sesor, motors driver and arduino at the back. The battery was connected to the Motor Driver which gives 12 V. The 5 V output of Motor Drover is connected to the breadboard and it gives power supply to Arduino and Sensors. There is a connection of jumper wires with the sensor to the arduino for input of digital data. Then the Arduino is connected to INPUT PINS of Motor Driver. Then the OUTPUT PINS of the Motor Driver are connected to the mototors which has wheels mounted to it.
 
