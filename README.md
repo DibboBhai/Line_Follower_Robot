@@ -127,3 +127,36 @@ For the output in Motors
 - OUT1 will have positive terminal and OUT2 will be negative terminal.
 - OUT3 will have negative terminal and OUT4 will be positive terminal.
 
+# Programming
+
+**<ins>Initializing pins andother variables**
+ - At the staring we define the input and output pins
+ - After that we define whit and blak for conveinence of the input readings
+ - Intialize that by default the very initial reading is white everywhere
+ - At end for using PID define k<sub>p</sub>, k<sub>d</sub> and k<sub>i</sub>
+ - er is the error, per is the previous error and I is the integral error
+ - At the very end we put adj variable which steers the bot
+ 
+
+After that we setup the code according to the connections
+
+**<ins>move() function**
+
+-We define a function move() which has 4 input variables taken from user which gives direction to the IN pins and tells which defines the rotation's direction.
+- This function is for convenience of the user for defining direction if there is any problem in wiring or interchange of wiring the user can easily just change the code rather than meticulously fixing the wiring.
+
+**<ins>read() function**
+
+- This functions help in reading the output given by the sensor after checking for the black line.
+- This function is a digital read function so output is 1 or 2 only
+
+**<ins>check() function** 
+
+- The check functions help in checking of the output given by read() function.
+- After evaluating the ouput it look after the condition given in code and assign an error value.
+
+**<ins>set_speed() function**
+
+- This function gives an analog output to the EN pins.
+
+After evaluating function then we first use read() function to get the input. AFter that we issue the value of per = er. Which assigns per the value of the previous reading. Then we use check() function which checks all the output given by read() function and check() function assigns a value to er. Then we use variable I and I changes because all the errors adds up to I. Then value of adj is assigned which steers the car according to the er, per and I value by putting it in PID concept's equation. At the very end we use set_speed() function to set the speed and use add and subtract adj to steer the car. We put move() function at the end so that we can use it t ocontrol direction.
