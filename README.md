@@ -80,3 +80,18 @@ Whenever the robot got away from the black line we assigned an error number to i
 
 We decided to put IR sensors at the front most part of the carso that blackline can be detected the most. The battery suppliest power to every sesor, motors driver and arduino at the back. The battery was connected to the Motor Driver which gives 12 V. The 5 V output of Motor Drover is connected to the breadboard and it gives power supply to Arduino and Sensors. There is a connection of jumper wires with the sensor to the arduino for input of digital data. Then the Arduino is connected to INPUT PINS of Motor Driver. Then the OUTPUT PINS of the Motor Driver are connected to the mototors which has wheels mounted to it.
 
+# Mechanical Design
+
+The 2D design is created in Onshape and then we used Laser cutter to get precise design in the Acrylic. Then we created another floor for keepig arduino in that floor and battery below and the above floor also had the switch. In the moddle there was Motor Driver and just ahead of it had the breadboard. At the front end the sensor was present.
+<img src="https://github.com/DibboBhai/Line_Follower_Robot/assets/148962484/000269a1-d76d-4c90-9380-ab8c68bbad9b" width="800" height="500">
+
+# Electrical Connections
+
+| Arduino with Sensors |  Arduino with Motor Driver |
+| ---------- | --------- |
+| A0 with D1 | Pin 5 with EN A |
+| A1 with D2 | Pin 3 with EN B | 
+| A2 with D3 | Pin 2 with IN 1 |
+| A3 with D4 | Pin 4 with IN 2 |
+| A4 with D5 | Pin 7 with IN 3 |
+|           |  Pin 8 with IN 4 |
