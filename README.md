@@ -58,7 +58,8 @@ Whenever the robot got away from the black line we assigned an error number to i
   Overall Steering of the bot,
   >Steering = K<sub>p</sub> × e + K<sub>d</sub> × ( e<sub>current</sub> - e<sub>previous</sub> ) + K<sub>i</sub> × e<sub>Summation of all errors</sub>
   
-  ![image]
+  <img src="![image](https://github.com/DibboBhai/Line_Follower_Robot/assets/148962484/9cba2af3-7003-459b-920b-123f35272b1e)" width="100" height="100">
+
 
 
 # Equipments Used
