@@ -87,11 +87,29 @@ The 2D design is created in Onshape and then we used Laser cutter to get precise
 
 # Electrical Connections
 
-| Arduino with Sensors |  Arduino with Motor Driver |
-| ---------- | --------- |
-| A0 with D1 | Pin 5 with EN A |
-| A1 with D2 | Pin 3 with EN B | 
-| A2 with D3 | Pin 2 with IN 1 |
-| A3 with D4 | Pin 4 with IN 2 |
-| A4 with D5 | Pin 7 with IN 3 |
-|           |  Pin 8 with IN 4 |
+| Arduino with Sensors |  Arduino with Motor Driver | Battery to Motor Driver | Motor Driver to rest of Circuit |
+| ---------- | --------- | ------ | ---- |
+| A0 with D1 | Pin 5 with EN A | Positive terminal to 12 V                 | Positive terminal of 5 V to Breadboard |
+| A1 with D2 | Pin 3 with EN B | Negative terminal to ground of breadboard | Arduino positive to Common 5 V positive |
+| A2 with D4 | Pin 2 with IN 1 |                                           | Sensor positive to Common 5 V positive |
+| A3 with D5 | Pin 4 with IN 2 |                                           | Ground to Common Ground Breadboard |
+| A4 with D6 | Pin 7 with IN 3 |                                           | Ground of Arduino to Common ground of breadboard |
+|            | Pin 8 with IN 4 |                                           | Ground of Sensor to Common ground of breadboard |
+
+# Sensor Setup
+The sensors has two different typr of pins D and A. D are for the DIGITAL INPUT and A are for ANALOG INPUT. In our case we will use Digital pins because the detection of the black line must be very sure event so we take only two inputs either the black line is detected or not. If the black line is detected then the output is 1 and 0 when there is no detection.
+
+Explanation of how the specific sensor works.
+- D1 is the left-most IR sensor
+- D2 is the left-middle IR sensor
+- D4 is the centre IR sensor
+- D5 is the right-middle IR sensor
+- D6 is the right-most IR sensor
+  
+
+<img src ="https://github.com/DibboBhai/Line_Follower_Robot/assets/148962484/fe04c8d3-7943-44f5-8a1d-4301e78b57e4" width="800" height="300">
+
+# Motor Control
+
+
+
