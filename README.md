@@ -111,5 +111,19 @@ Explanation of how the specific sensor works.
 
 # Motor Control
 
+The EN pins helps in the voltage being supplied to the motors and the IN pins helps in finding the direction of the movement and helps in changing the direction of electric current which results in control of direction of motion of bot. EN pins can handle analog input but for IN pins it is advisable not to use analog inputs.
 
+<img src="https://github.com/DibboBhai/Line_Follower_Robot/assets/148962484/fd91943c-bb46-4eff-88ba-32a3cc285075" width = 300 height = 300>
+
+For the directions
+
+- IN1 is always positive
+- IN2 is always negative
+- IN3 is always negative
+- IN4 is always positive
+
+For the output in Motors
+
+- OUT1 will have positive terminal and OUT2 will be negative terminal.
+- OUT3 will have negative terminal and OUT4 will be positive terminal.
 
