@@ -160,3 +160,44 @@ After that we setup the code according to the connections
 - This function gives an analog output to the EN pins.
 
 After evaluating function then we first use read() function to get the input. AFter that we issue the value of per = er. Which assigns per the value of the previous reading. Then we use check() function which checks all the output given by read() function and check() function assigns a value to er. Then we use variable I and I changes because all the errors adds up to I. Then value of adj is assigned which steers the car according to the er, per and I value by putting it in PID concept's equation. At the very end we use set_speed() function to set the speed and use add and subtract adj to steer the car. We put move() function at the end so that we can use it t ocontrol direction.
+
+
+# Testing and Calibration
+
+Now the bot is ready to be tested in a white flex sheet and black tape can be used for initial testing. After testing we change the value of K<sub>p</sub>, K<sub>d</sub> and K<sub>i</sub> value according to the experimentation. It is recomended to keep K<sub>p</sub> value highest, K<sub>d</sub> medium and K<sub>i</sub> having value as 0. The best value of PID variables are found after a lot of experimentation and those variables are best for the bot having same dimension
+
+# Performance Evaluation
+
+Perfomrance evaluation is done by checking the speed and accuracy of the bot. It is also tested by how it detects and follows the sharp edges and at how much precision it turns without loosing the track of the line. Ans lastly how easily the biasing is done according to different tracks.
+
+# Future Improvements
+
+There are many scope for future improvement of our bots
+
+- Increase of accuracy and speed of bot
+- Use of machine learning for better data collection and for better experimentation for calculating for PID variables
+- Use of artificial intelligence so that we can define a function which can fix the PID variables values accordng to the speed
+- This idea of project can be used for making Maze Runner bot and Obstacle Avioding Bot.
+
+# Conclusion
+
+This project is a very interesting project where one can learn many different things. One can understand application of PID theory in develpment in self driving cars. This project ignites the interest of a person in autonomous objeccts and how to develop. In this project one learn new things like development of basic  self driving cars.
+
+# References
+
+- https://circuitdigest.com/microcontroller-projects/interfacing-ir-sensor-module-with-arduino
+- https://www.ni.com/en/shop/labview/pid-theory-explained.html#:~:text=As%20the%20name%20suggests%2C%20PID,are%20discussed%20in%20this%20paper
+- https://www.linkedin.com/pulse/crucial-role-pid-control-line-follower-robots-kiruthika-r-zakwc/
+- https://howtomechatronics.com/tutorials/arduino/arduino-dc-motor-control-tutorial-l298n-pwm-h-bridge/#:~:text=The%20L298N%20is%20a%20dual,and%20explain%20how%20it%20works.
+
+# Members
+
+- Dr. Subhankar Mishra (Faculty incharge of RoboTech Club) - Guidance for the Project
+- Girija Shankar Ray (President of Robotech Club) - Mentor of Whole Project, Bug Fixing
+- Sanat Kumar Behera (senior) - Mentor of Mechanical
+- Karan Kumar Sahoo (senior) - Mentor of Coding
+- Rikan Mahakur (Captain) - Mechanical work for project
+- Bratanu Saha - Calibration work for project
+- Mayukh Ghosh - Wiring and ciruciting work for project
+- Arya Niyogi - Body Designing work for project
+- Dadhichi Das - Coding work for project
