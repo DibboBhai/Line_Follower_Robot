@@ -69,16 +69,16 @@ Whenever the robot got away from the black line we assigned an error number to i
 - Breadboard, Jumper Wires, Switch(SPST)
 - Li-ion battery 3S: ~12V
 - SmartFlex RLS-06 Analog & Digital Line Sensor Array
-- LN 298 Motor Driver
-- Metal TT motor Dual shaft  X 2
+- LN 298N Motor Driver
+- Metal TT motor Dual shaft  ×2
 - Acylic Used to make Chassis
-- Motor Wheels X2
+- Motor Wheels ×2
 - Castor Wheel
 - Nuts & Blots, Glue gun, Soldering iron, Double Tapes
 
 # System Architecture
 
-We decided to put IR sensors at the front most part of the carso that blackline can be detected the most. The battery suppliest power to every sesor, motors driver and arduino at the back. The battery was connected to the Motor Driver which gives 12 V. The 5 V output of Motor Drover is connected to the breadboard and it gives power supply to Arduino and Sensors. There is a connection of jumper wires with the sensor to the arduino for input of digital data. Then the Arduino is connected to INPUT PINS of Motor Driver. Then the OUTPUT PINS of the Motor Driver are connected to the mototors which has wheels mounted to it.
+We decided to put IR sensors at the front most part of the carso that blackline can be detected the most. The battery suppliest power to every sesor, motors driver and arduino at the back. The battery was connected to the Motor Driver which gives 12 V. The 5 V output of Motor Drover is connected to the breadboard and it gives power supply to Arduino and Sensors. There is a connection of jumper wires with the sensor to the arduino for input of digital data. Then the Arduino is connected to INPUT PINS of Motor Driver. Then the OUTPUT PINS of the Motor Driver are connected to the motors which has wheels mounted to it.
 
 # Mechanical Design
 
