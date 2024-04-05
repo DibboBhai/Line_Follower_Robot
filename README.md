@@ -13,7 +13,7 @@ There is a track which has a black line and rest of the area is white in the tra
 
 # Concept/Theory
 
-The IR sesor isa device which is capable of emitting infrared lights to sense some aspect of the surroundings and can be employed to detect the motion of an object.  This light propagates through the air and hits an object, after that the light gets reflected in the photodiode sensor. The above concept is used to detech the change in the black line and then process accordingly. Expermentally we saw that whenever a sesor detect black line then it gives output as 1 and whenever it detects white region then it gives output 0. 
+The IR sesor is a device which is capable of emitting infrared lights to sense some aspect of the surroundings and can be employed to detect the motion of an object.  This light propagates through the air and hits an object, after that the light gets reflected in the photodiode sensor. The above concept is used to detech the change in the black line and then process accordingly. Expermentally we saw that whenever a sesor detect black line then it gives output as 1 and whenever it detects white region then it gives output 0. 
 
 By using the above concept we will use to maneuver out bot. Whenever it detects a black line it will follow it by using Proportional–integral–derivative controller Algorithm.
 
