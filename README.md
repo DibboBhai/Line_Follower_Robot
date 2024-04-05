@@ -1,6 +1,6 @@
 # Line_Follower_Robot
 
-Autonomous Line follower cereated by students of RoboTech Club at National Institute of Science Education and Research in an attempt for participating in competitions.
+Autonomous Line follower created by students of RoboTech Club at National Institute of Science Education and Research in an attempt for participating in competitions.
 
 # Time Line
 
@@ -9,13 +9,13 @@ Autonomous Line follower cereated by students of RoboTech Club at National Insti
 
 # Problem Statement
 
-There is a track which has a black line and rest of the area is white in the track. There will be a starting point and stopping point and many lines will be there which connects the start and stop point. The bot is supposed to follow the black line and there will be many challenge like unexpected turns and different ways in which the bot will be misguided from the end line. The bot has to avoid the challenges and reach the stop point as fast as possible.
+There is a track which has a black line and rest of the area is white in the track. There will be a starting point and stoping point and many lines will be there which connects the start and stop point. The bot is supposed to follow the black line and there will be many challenge like unexpected turns and different ways in which the bot will be misguided from the end line. The bot has to avoid the challenges and reach the stop point as fast as possible.
 
 # Concept/Theory
 
 The IR sesor isa device which is capable of emitting infrared lights to sense some aspect of the surroundings and can be employed to detect the motion of an object.  This light propagates through the air and hits an object, after that the light gets reflected in the photodiode sensor. The above concept is used to detech the change in the black line and then process accordingly. Expermentally we saw that whenever a sesor detect black line then it gives output as 1 and whenever it detects white region then it gives output 0. 
 
-By using the above concpet we will use to maneuver out bot. Whenever it detects a black line it will follow it by using Proportional–integral–derivative controller Algorithm.
+By using the above concept we will use to maneuver out bot. Whenever it detects a black line it will follow it by using Proportional–integral–derivative controller Algorithm.
 
 **<ins>Taking Input</ins>**
 
@@ -159,7 +159,7 @@ After that we setup the code according to the connections
 
 - This function gives an analog output to the EN pins.
 
-After evaluating function then we first use read() function to get the input. AFter that we issue the value of per = er. Which assigns per the value of the previous reading. Then we use check() function which checks all the output given by read() function and check() function assigns a value to er. Then we use variable I and I changes because all the errors adds up to I. Then value of adj is assigned which steers the car according to the er, per and I value by putting it in PID concept's equation. At the very end we use set_speed() function to set the speed and use add and subtract adj to steer the car. We put move() function at the end so that we can use it t ocontrol direction.
+After evaluating function then we first use read() function to get the input. AFter that we issue the value of per = er. Which assigns per the value of the previous reading. Then we use check() function which checks all the output given by read() function and check() function assigns a value to er. Then we use variable I and I changes because all the errors adds up to I. Then value of adj is assigned which steers the car according to the er, per and I value by putting it in PID concept's equation. At the very end we use set_speed() function to set the speed and use add and subtract adj to steer the car. We put move() function at the end so that we can use it to control direction.
 
 
 # Testing and Calibration
