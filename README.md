@@ -1,4 +1,4 @@
-# Line_Follower_Robot
+# Line_Follower_2
 
 Autonomous Line follower created by students of RoboTech Club at National Institute of Science Education and Research in an attempt for participating in competitions.
 
