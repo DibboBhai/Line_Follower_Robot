@@ -193,13 +193,11 @@ This project is a very interesting project where one can learn many different th
 # Members
 
 - Dr. Subhankar Mishra (Faculty incharge of RoboTech Club) - Guidance for the Project
-- Girija Shankar Ray (President of Robotech Club) - Mentor of Whole Project, Bug Fixing
+- Girija Sankar Ray (President of Robotech Club) - Mentor of Whole Project, Bug Fixing
 - Sanat Kumar Behera (senior) - Mentor of Mechanical
-- Karan Kumar Sahoo (senior) - Mentor of Coding
+- Karan Kumar Sahoo (Senior) - Mentor of Coding
 - Rikan Mahakur (Captain) - Mechanical work for project
 - Bratanu Saha - Calibration work for project
 - Mayukh Ghosh - Wiring and ciruciting work for project
 - Arya Niyogi - Body Designing work for project
 - Dadhichi Das - Coding work for project
-
-# Joy Maa Kali
